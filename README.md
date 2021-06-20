@@ -30,7 +30,7 @@ Usage: <main class> [-hV] -d=<inputDate> -f=<filePath>
   
   Example Execution :  
   
-  ######java -jar target/CookieChallenge-1.0-jar-with-dependencies.jar --filePath=<PATH_TO_COOKIE_LOG>/cookie_log.csv --date=2018-12-09
+ java -jar target/CookieChallenge-1.0-jar-with-dependencies.jar --filePath=<PATH_TO_COOKIE_LOG>/cookie_log.csv --date=2018-12-09
 
 
 
