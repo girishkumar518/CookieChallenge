@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="basePath">../../logs</Property>
+    </Properties>
+    <Appenders>
+        <!-- File Appender -->
+        <File name="file" fileName="${basePath}/logfile.log" append="true">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} -%msg%n" />
+        </File>
+        <!-- Console Appender -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} -%msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="debug" >
+            <AppenderRef ref="file" />
+            <AppenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
